@@ -69,6 +69,7 @@ body {
   background-color: #fff;
 }
 
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -77,6 +78,27 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  text-align: right;
+  border-right: 5px solid #eee;
+  border-left: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -456,6 +478,9 @@ mark,
 
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
+}
+.pull-right {
+  float: right;
 }
 
 .initialism {
@@ -3885,7 +3910,7 @@ input[type="button"].btn-block {
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
-  
+
 }
 
 .nav-link.disabled {
