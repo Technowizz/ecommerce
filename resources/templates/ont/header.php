@@ -32,6 +32,9 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #000000;">
+
         <?php include(TEMPLATE_FRONT . DS . "top_nav.php") ?>
-    </nav>
+
+<div style="margin-top:50px;">
+
+</div>
