@@ -8,10 +8,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" style="color: #54ef4f"  href="#">Shop <span class="sr-only">(current)</span></a>
+        <a class="nav-link" style="color: #54ef4f"  href="shop.php">Shop <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link"style="color: #54ef4f"  href="#">Login</a>
+        <a class="nav-link"style="color: #54ef4f"  href="login.php">Login</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style="color: #54ef4f" href="admin">Admin</a>
