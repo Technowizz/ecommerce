@@ -10,13 +10,9 @@
 
 
   <?php
-
   $query = query(" SELECT * FROM products where product_id = " . escape_string($_GET['id']) . "" );
   confirm($query);
   while ($row = fetch_array($query)):
-
-
-
    ?>
 
        <!-- Side Navigation -->
@@ -35,7 +31,7 @@
 
     <div class="col-md-5">
 
-        <div class="card">
+        <div class="card float-left">
 
 
     <div class="card-body">
@@ -218,6 +214,6 @@
 </div>
 
 </div>
-
+<script src="js/jquery.js"></script>
 
     <?php include(TEMPLATE_BACK . DS . "footer.php") ?>

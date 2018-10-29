@@ -20,7 +20,7 @@
         <a class="nav-link" style="color: #54ef4f"  href="checkout.html">Checkout</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: #54ef4f"  href="checkout.html">Contact</a>
+        <a class="nav-link" style="color: #54ef4f"  href="contact.php">Contact</a>
       </li>
     </ul>
   </div>

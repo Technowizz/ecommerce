@@ -51,7 +51,7 @@ while ($row = fetch_array($query)) {
 
  echo "<div class='col-sm-4 col-lg-4 col-md-4'>
   <div class='card'>
-  <a href='item.php?id={$row['product_id']}'><img src='{$row ['product_image']}' class='img-thumbnail' alt=''></a>
+  <a href='item.php?id={$row['product_id']}'><img src='{$row ['product_image']}' class='img-thumbnail mx-auto d-block' alt=''></a>
     <div class='card-body'>
        <h5 class='float-right'>  &#8377 {$row ['product_price']}</h5>
               <h5><a href='item.php?id={$row['product_id']}'>{$row ['product_title']}</a>             </h5>
@@ -151,14 +151,30 @@ redirect("login.php");
 $_SESSION['username'] = $username;
 set_message("Welcome to admin {$username}");
 redirect("admin");
-
          }
-
-
-
     }
-
-
-
 }
+
+
+function send_message() {
+    if(isset($_POST['submit'])){
+        $to          = "kuttyselva57@gmail.com";
+        $from_name   =   $_POST['name'];
+        $subject     =   $_POST['subject'];
+        $emails       =   $_POST['email'];
+        $message     =   $_POST['message'];
+        $header = "From: {$from_name} {$emails}";
+        $result = mail($to, $subject, $message . " from " . $emails ,$header);
+        if(!$result) {
+            set_message("Sorry we could not send your message");
+            redirect("contact.php");
+        } else {
+            set_message("Your Message has been sent");
+            redirect("contact.php");
+        }
+    }
+}
+
+
+
  ?>
