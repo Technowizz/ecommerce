@@ -56,7 +56,7 @@ while ($row = fetch_array($query)) {
        <h5 class='float-right'>  &#8377 {$row ['product_price']}</h5>
               <h5><a href='item.php?id={$row['product_id']}'>{$row ['product_title']}</a>             </h5>
                           <p>See more snippets like this online store item at online            </p>
-             <a class='btn btn-outline-info' target='_blank'href='item.php?id={$row['product_id']}'>Add Cart</a>
+             <a class='btn btn-outline-info' target='_blank'href='cart.php?add={$row['product_id']}'>Add Cart</a>
              <a class='btn btn-outline-success float-right' href='item.php?id={$row['product_id']}' >Buy Now</a>
                                    </div>     </div> </div>";
 
@@ -101,7 +101,7 @@ while ($row = fetch_array($query)) {
        <h5 class='float-right'>  &#8377 {$row ['product_price']}</h5>
               <h5><a href='item.php?id={$row['product_id']}'>{$row ['product_title']}</a>             </h5>
                           <p>See more snippets like this online store item at online            </p>
-             <a class='btn btn-outline-primary float-left' target='_blank'href='item.php?id={$row['product_id']}'>Add Cart</a>
+             <a class='btn btn-outline-primary float-left' target='_blank'href='cart.php?add={$row['product_id']}'>Add Cart</a>
              <a class='btn btn-outline-success float-right' href='item.php?id={$row['product_id']}' >Buy Now</a>
                                    </div>     </div> </div>";
 
@@ -122,7 +122,7 @@ while ($row = fetch_array($query)) {
        <h5 class='float-right'>  &#8377 {$row ['product_price']}</h5>
               <h5 class='float-left'><a href='item.php?id={$row['product_id']}'>{$row ['product_title']}</a>             </h5><br><br>
                           <p>See more snippets like this online store item at online            </p>
-             <a class='btn btn-outline-primary float-left' target='_blank'href='item.php?id={$row['product_id']}'>Add Cart</a>
+             <a class='btn btn-outline-primary float-left' target='_blank'href='cart.php?add={$row['product_id']}'>Add Cart</a>
              <a class='btn btn-outline-success float-right' href='item.php?id={$row['product_id']}' >Buy Now</a>
                                    </div>     </div> </div>";
 

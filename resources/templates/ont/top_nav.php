@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #000000;">
 
-<a class="navbar-brand" href="#" style="color:#ffffff;font-family: 'Pacifico', cursive;">TechWiZ</a>
+<a class="navbar-brand" href="index.php" style="color:#ffffff;font-family: 'Pacifico', cursive;">TechWiZ</a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,10 @@
         <a class="nav-link" style="color: #54ef4f" href="admin">Admin</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: #54ef4f"  href="checkout.html">Checkout</a>
+        <a class="nav-link" style="color: #54ef4f"  href="checkout.php">Checkout</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" style="color: #54ef4f"  href="shop.php"> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style="color: #54ef4f"  href="contact.php">Contact</a>
