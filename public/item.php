@@ -46,7 +46,8 @@
 
     <form action="">
         <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="ADD TO CART">
+            <!-- <input type="submit" class="btn btn-primary" value="ADD TO CART"> -->
+            <?php echo" <a class='btn btn-outline-info' target='_blank'href='cart.php?add={$row['product_id']}' > Add Cart </a> "?>
         </div>
     </form>
 

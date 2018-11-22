@@ -64,8 +64,12 @@ redirect("../public/checkout.php");
 }
 
 function cart(){
-$total =0;
-$item_quantity=0;
+  $total = 0;
+  $item_quantity = 0;
+  $item_name = 1;
+  $item_number =1;
+  $amount = 1;
+  $quantity =1;
 foreach ($_SESSION as $name => $value) {
 
   if($value > 0 ) {
@@ -94,9 +98,18 @@ foreach ($_SESSION as $name => $value) {
 <td> <a href="cart.php?delete={$row['product_id']}"><i class="fas fa-trash-alt fa-lg" style="color:#cc0000;"></i></a> </td>
 
 </tr>
+<input type="hidden" name="product_title[]" value="{$row['product_title']}">
+<input type="hidden" name="product_id[]" value="{$row['product_id']}">
+<input type="hidden" name="product_price[]" value="{$row['product_price']}">
+<input type="hidden" name="product_quantity[]" value="$value">
+
 DELIMETER;
 
 echo $product;
+$item_name++;
+$item_number++;
+$amount++;
+$quantity++;
 
 }$_SESSION['item_total'] = $total += $sub;
 $_SESSION['item_quantity']  = $item_quantity ;
